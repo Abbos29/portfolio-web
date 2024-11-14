@@ -3,13 +3,13 @@ import s from './Card.module.scss'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 
-const Card = ({ imgSrc, name, description, technologies }) => {
+const Card = ({ image, name, description, technologies, link }) => {
     return (
         <>
             <div className={s.card}>
                 <div className={s.image}>
-                    <img src={imgSrc} alt={description} />
-                    <Link target='_blank' className={s.link} to="/"><FaArrowRight /></Link>
+                    <img src={image} alt={description} />
+                    <Link target='_blank' className={s.link} to={link}><FaArrowRight /></Link>
 
                 </div>
 

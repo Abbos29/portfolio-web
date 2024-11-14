@@ -18,7 +18,7 @@ const App = () => {
           height: '100vh',
           display: 'flex', 
         }}
-        thumbMinSize={50} 
+        // thumbMinSize={50} 
         noScrollX 
       >
         <CustomCursor />
