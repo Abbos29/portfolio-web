@@ -43,13 +43,13 @@
 }
 
 .hero {
-    height: 50dvh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media (max-width: 480px) {
-      height: 70dvh;
+    //   height: 70dvh;
     }
 }
 
