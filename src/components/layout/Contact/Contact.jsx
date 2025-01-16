@@ -20,8 +20,8 @@ const Contact = () => {
                             <div className={s.item}>
                                 <h3>Social medias</h3>
                                 <div>
-                                    <a href="">↗ telegram</a>
-                                    <a href="">↗ whatsapp</a>
+                                    <a target='_blank' href="https://t.me/abbos_uz1" rel="noreferrer">↗ telegram</a>
+                                    <a target='_blank' href="https://wa.me/998332223390" rel="noreferrer">↗ whatsapp</a>
                                 </div>
                             </div>
                         </div>

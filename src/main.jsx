@@ -5,10 +5,14 @@ import App from './App.jsx'
 import './Reset.scss'
 import './App.scss'
 import { BrowserRouter } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
+  <HelmetProvider>
 
-  </BrowserRouter>
+    <BrowserRouter>
+      <App />
+
+    </BrowserRouter>
+  </HelmetProvider>
 )

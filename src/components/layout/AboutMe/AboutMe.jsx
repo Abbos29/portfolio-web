@@ -12,7 +12,7 @@ const AboutMe = () => {
                 <div className={s.about_wrap}>
                     <div className={s.box}>
                         <Top title={'About'} />
-                        <p>Hey, my name is Charles Bruyerre and I use Sharlee as my nickname across social medias. I’m a graphic designer, UX/UI designer & front-end web developer from France. I’m also passionate about pop music and make portraits and universes around what I listen to and I’m always curious to learn more when it comes to new technologies and creative coding.</p>
+                        <p>Hey, my name is Abbos Valiev, and I’m a frontend developer with a passion for creating seamless and innovative web experiences. I’ve worked as a teacher for over a year, sharing knowledge and inspiring others, and I continue to freelance, developing websites of varying complexities. Outside of work, I enjoy playing basketball and diving into books, always looking for ways to grow both personally and professionally.</p>
                         <a href="">↓ Resume</a>
                     </div>
 
@@ -25,7 +25,7 @@ const AboutMe = () => {
                             {/* <p>abbos valiev • abbos valiev • abbos valiev •</p> */}
         
                         </div>
-                        <img src="/profile.avif" alt="image" />
+                        <img src="/abbos2.JPG" alt="image" />
                     </div>
                 </div>
             </section>
