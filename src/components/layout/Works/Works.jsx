@@ -6,12 +6,11 @@ import axios from 'axios';
 
 const Works = () => {
     const [projects, setProjects] = useState([]);
-    const [totalProjects, setTotalProjects] = useState(0); // Общее количество проектов
+    const [totalProjects, setTotalProjects] = useState(0);
     const [loading, setLoading] = useState(true);
     const [nextPage, setNextPage] = useState(null);
     const [loadingMore, setLoadingMore] = useState(false);
 
-    // Функция для загрузки данных
     const fetchProjects = (url) => {
         setLoading(true);
         axios
@@ -29,7 +28,7 @@ const Works = () => {
                 });
 
                 setProjects(prevProjects => [...prevProjects, ...newProjects]);
-                setTotalProjects(response.data.count); // Устанавливаем общее количество проектов
+                setTotalProjects(response.data.count); 
                 setNextPage(response.data.next);
                 setLoading(false);
                 setLoadingMore(false);
@@ -41,12 +40,12 @@ const Works = () => {
             });
     };
 
-    // Первоначальная загрузка данных
+
     useEffect(() => {
         fetchProjects('https://api.valiev.uz/projects/');
     }, []);
 
-    // Обработчик для кнопки "More"
+
     const handleLoadMore = () => {
         if (nextPage) {
             setLoadingMore(true);
@@ -57,7 +56,7 @@ const Works = () => {
     return (
         <section className={s.works}>
             <div className="container">
-                <Top title={'Projects'} count={totalProjects} /> {/* Передаем общее количество проектов */}
+                <Top title={'Projects'} count={totalProjects} /> 
 
                 {loading && !loadingMore ? (
                     <div className={s.loader}>
